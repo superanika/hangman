@@ -1,0 +1,172 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word_container {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.letter_wrapper {
+    width: 30px;
+    height: 40px;
+    border-bottom: 2px solid blue;
+}
+
+.input_container {
+    margin: 20px 0;
+    width: 280px;
+  }
+
+.letter_input {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.said_letters {
+    display: flex;
+}
+.said_letters p {
+    margin: 5px;
+}
+.hangman {
+    width: 200px;
+    height: 212px;
+    position: relative;
+    margin: 0;
+}
+
+.part {
+    border: 4px solid black;
+    position: absolute;
+
+}
+.floor {
+    height: 0;
+    width: 200px;
+    bottom: 0;
+}
+
+.left_side {
+    height: 200px;
+    width: 8px;
+    left: 20px;
+    bottom: 5px;
+}
+.ceiling {
+    height: 8px;
+    width: 100px;
+    left: 32px;
+    top: 0;
+}
+.corner {
+    height: 8px;
+    width: 50px;
+    transform: rotate(-45deg);
+    left: 18px;
+    top: 20px;
+    background-color: white;
+}
+.rope {
+    width: 15px;
+    height: 25px;
+    background-image: url('./images/rope.jpg');
+    background-size: cover;
+    border: none;
+    top: 16px;
+    left: 110px;
+}
+.head {
+    width: 45px;
+    height: 45px;
+    top: 40px;
+    left: 100px;
+    border: none;
+    background-image: url('./images/head.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.face {
+    width: 25px;
+    height: 25px;
+    background-image: url('./images/face.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 51px;
+    left: 107px;
+}
+.chest {
+    border: 2px solid black;
+    width: 0;
+    height: 45px;
+    top: 83px;
+    left: 118px;
+}
+.left_arm {
+    border: 2px solid black;
+    width: 0;
+    height: 35px;
+    top: 76px;
+    left: 101px;
+    transform: rotate(45deg);
+}
+.right_arm {
+    border: 2px solid black;
+    width: 0;
+    height: 35px;
+    top: 76px;
+    left: 137px;
+    transform: rotate(135deg);
+}
+.left_leg {
+    border: 2px solid black;
+    width: 0;
+    height: 45px;
+    top: 128px;
+    left: 107px;
+    transform: rotate(30deg);
+
+}
+.right_leg {
+    border: 2px solid black;
+    width: 0;
+    height: 45px;
+    top: 128px;
+    left: 130px;
+    transform: rotate(150deg);
+}
+.modal {
+    width: 200px;
+    height: 100px;
+    z-index: 2;
+    display: none;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-100px);
+    background-color: white;
+}
+.close_icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    visibility: hidden;
+}
+.show {
+    display: flex;
+}

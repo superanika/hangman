@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="word_container"></div>
+        <div class="input_container">
+            <label class="label">Introduce una letra</label>
+            <input type="text" maxlength="1" class="letter_input" >
+            <button class="check_letter">Comprobar</button>
+        </div>    
+        <p class="message"></p>
+        <div class="hangman">
+            <div class="part1 part floor hide"></div>
+            <div class="part2 part left_side hide"></div>
+            <div class="part3 part ceiling hide"></div>
+            <div class="part4 part corner hide"></div>
+            <div class="part5 part rope hide"></div>
+            <div class="part6 part head hide"></div>
+            <div class="face hide"></div>
+            <div class="part7 part chest hide"></div>
+            <div class="part8 part left_arm hide"></div>
+            <div class="part9 part right_arm hide"></div>
+            <div class="part10 part left_leg hide"></div>
+            <div class="part11 part right_leg hide"></div>    
+        </div>
+        <div class="said_letters"></div>
+        <button class="reset_btn">Reiniciar</button>
+        <div class="modal">
+            <div class="close_modal"><i class="fas fa-window-close close_icon"></i></div>
+            <p class="modal_message">esto es una prueba para ver</p>
+            <button class="modal_button">Jugar otra vez</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
