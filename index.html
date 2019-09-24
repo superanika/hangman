@@ -10,35 +10,72 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="word_container"></div>
-        <div class="input_container">
-            <label class="label">Introduce una letra</label>
-            <input type="text" maxlength="1" class="letter_input" >
-            <button class="check_letter">Comprobar</button>
-        </div>    
-        <p class="message"></p>
-        <div class="hangman">
-            <div class="part1 part floor hide"></div>
-            <div class="part2 part left_side hide"></div>
-            <div class="part3 part ceiling hide"></div>
-            <div class="part4 part corner hide"></div>
-            <div class="part5 part rope hide"></div>
-            <div class="part6 part head hide"></div>
-            <div class="face hide"></div>
-            <div class="part7 part chest hide"></div>
-            <div class="part8 part left_arm hide"></div>
-            <div class="part9 part right_arm hide"></div>
-            <div class="part10 part left_leg hide"></div>
-            <div class="part11 part right_leg hide"></div>    
-        </div>
-        <div class="said_letters"></div>
-        <button class="reset_btn">Reiniciar</button>
-        <div class="modal">
-            <div class="close_modal"><i class="fas fa-window-close close_icon"></i></div>
-            <p class="modal_message">esto es una prueba para ver</p>
-            <button class="modal_button">Jugar otra vez</button>
-        </div>
+        <header class="header">
+            <h1 class="title">El juego del ahorcado</h1>
+        </header>
+        <main class="main">
+            <div class="language_wrapper">
+                    <div class="spanish">
+                        <label for="language1" class="language_label">
+                            <input
+                            id="spanish_language"
+                            type="radio"
+                            value="spanish"
+                            name="languages"
+                            class="radio"
+                            />
+                            Español
+                        </label>
+                    </div>
+                    <div class="english">
+                        <label for="language2" class="language_label">
+                            <input
+                            id="english_language"
+                            type="radio"
+                            value="english"
+                            name="languages"
+                            class="radio"
+                            />
+                            English
+                        </label>
+                    </div>
+            </div>
+            <div class="word_container"></div>
+            <div class="input_container">
+                <label class="label">Introduce una letra</label>
+                <input type="text" maxlength="1" class="letter_input" autofocus>
+                <button class="check_letter btn">Comprobar</button>
+            </div>    
+            <p class="message "></p>
+            <div class="hangman_wrapper">
+                <div class="hangman">
+                    <div class="part1 part floor hide"></div>
+                    <div class="part2 part left_side hide"></div>
+                    <div class="part3 part ceiling hide"></div>
+                    <div class="part4 part corner hide"></div>
+                    <div class="part5 part rope hide"></div>
+                    <div class="part6 part head hide"></div>
+                    <div class="face hide"></div>
+                    <div class="part7 part body chest hide"></div>
+                    <div class="part8 part body left_arm hide"></div>
+                    <div class="part9 part body right_arm hide"></div>
+                    <div class="part10 part body left_leg hide"></div>
+                    <div class="part11 part body right_leg hide"></div>    
+                </div>
+                <div class="said_letters"></div>
+            </div>    
+            <button class="reset_btn btn">Reiniciar</button>
+            <div class="modal">
+                <div class="close_modal"><i class="fas fa-window-close close_icon"></i></div>
+                <p class="modal_message"></p>
+                <button class="modal_button btn">Jugar otra vez</button>
+            </div>
+        </main>
+        <footer class="footer">
+           <p class="footer_text">Visítame en <a href="https://github.com/superanika" target="blank" class="link">Github</a></p> 
+        </footer>
     </div>
     <script src="main.js"></script>
+    <script type="module" src="module.js"></script>
 </body>
 </html>
