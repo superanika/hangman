@@ -186,7 +186,7 @@ function spanishLanguage() {
     checkBtn.innerHTML = 'Comprobar';
     resetBtn.innerHTML = 'Reiniciar';
     modalButton.innerHTML = 'Jugar otra vez';
-    footerText.innerHTML= 'Visítame en <a href="https://github.com/superanika" target="blank" class="link">Github</a>'
+    footerText.innerHTML= 'Visítame en <a href="https://github.com/superanika/hangman" target="blank" class="link">Github</a>'
 }
 
 function englishLanguage() {
@@ -196,7 +196,7 @@ function englishLanguage() {
     checkBtn.innerHTML = 'Check';
     resetBtn.innerHTML = 'Reset';
     modalButton.innerHTML = 'Play again';
-    footerText.innerHTML = 'Visit me at <a href="https://github.com/superanika" target="blank" class="link">Github</a>'
+    footerText.innerHTML = 'Visit me at <a href="https://github.com/superanika/hangman" target="blank" class="link">Github</a>'
 }
 
 function reset() {
