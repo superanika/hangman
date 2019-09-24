@@ -166,7 +166,7 @@ body {
 .rope {
     width: 15px;
     height: 25px;
-    background-image: url('./images/rope.jpg');
+    background-image: url('./images/rope.png');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
